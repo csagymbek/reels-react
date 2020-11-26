@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/App.css";
+import VideoCard from "./components/VideoCard";
 
 export default function App() {
   return (
@@ -7,14 +8,18 @@ export default function App() {
       <div className="app__top">
         {/* image logo  */}
         <img
-          src="https://1000logos.net/wp-content/uploads/2019/07/Instagram-Logo-2016%E2%80%93present.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
           alt=""
           className="app__logo"
         />
         {/* reels text  */}
         <h1>Reels</h1>
       </div>
-      <div className="app__videos">{/* scrollable container of videos  */}</div>
+      <div className="app__videos">
+        {/* scrollable container of videos  */}
+        <VideoCard />
+        <VideoCard />
+      </div>
     </div>
   );
 }
